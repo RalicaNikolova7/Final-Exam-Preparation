@@ -1,0 +1,18 @@
+namespace BasketballEquipment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int yearSalary = int.Parse(Console.ReadLine());
+
+            double shoes = yearSalary-(0.4 * yearSalary);
+            double clothes = shoes-(0.2 * shoes);
+            double ball = clothes / 4;
+            double accessories = ball / 5;
+            double sum = yearSalary + shoes + clothes + ball + accessories;
+            Console.WriteLine("{0:F2}", sum);
+            
+        }
+    }
+}
